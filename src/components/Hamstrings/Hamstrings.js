@@ -2,28 +2,25 @@ import { useState, useEffect} from 'react'
 import appFitness from '../../funciones'
 import { Link } from 'react-router-dom'
 
-const LowerBack = () => {
+const Hamstrings = () => {
 
     const [exercises, setExercises] = useState([])
     useEffect(() =>{
         appFitness(setExercises)
     },[])
-    //lats = dorsales
-    //traps = trapecio
-    //spine = columna
-    const LowerBack = exercises.filter(p => p.target === "upper back" || p.target === "traps");
+    
+    const Hamstrings = exercises.filter(p => p.target === "hamstrings");
 
 
     return (
         <>
+        <div className='back-container'>
+            <Link to="/"><button>Volver</button></Link>
+        </div>
         <div className='container'>
             <div className='row'>
-                <select>
-                    <option value="all">Todos</option>
-                    <option value="traps">Trapecio</option>
-                    <option value="lats">Dorsales</option>
-                </select>
-            {exercises != null ? (LowerBack.map(ej => (
+
+            {exercises != null ? (Hamstrings.map(ej => (
                 <div className="col" key={ej.id}>
                     <div className='card'>
                         <h4 className="card-title">{ej.name}</h4>
@@ -41,4 +38,4 @@ const LowerBack = () => {
     )
 }
 
-export default LowerBack
+export default Hamstrings

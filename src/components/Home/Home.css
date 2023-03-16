@@ -1,0 +1,14 @@
+.img-muscles img{
+    width: 300px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.img-muscles {
+    margin-top: 20px;
+}
+
+@media(max-width:767px){
+    .img-muscles img{
+        width: 180px;
+    }
+}

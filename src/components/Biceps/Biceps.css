@@ -17,6 +17,7 @@
 .btn{
     border: 1px solid black;
     font-weight: bold;
+    background-color: #008bdc;
 }
 .back-container{
     margin-top: 20px;
@@ -30,7 +31,7 @@
     margin-bottom: 20px;
     background-color: black;
     font-weight: bold;
-    color: #ffc107;
+    color: #008bdc;
     border: 1px solid black;
 }
 

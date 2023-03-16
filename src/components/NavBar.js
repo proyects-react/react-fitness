@@ -12,7 +12,7 @@ const handleClick = () => {
 return (
     <>
             <NavContainer>
-            <h2>Gym Fitness</h2>
+            <h2>Gym Fitness Exercises</h2>
             <div className={`menu ${clicked ? 'active' : ''}`}>
                 <a href="#" onClick={handleClick}to="/">Inicio</a>
                 <a href="#" onClick={handleClick}to="/quienessomos">Quienes somos</a>
@@ -64,6 +64,9 @@ a{
             color: white;
             display: inline;
         }
+        a:hover{
+            color: #008bdc;
+        }
     }
 }
 .menu.active{
@@ -92,7 +95,7 @@ a{
 
 const BgDiv = styled.div`
     position:absolute;
-    background-color: #FDD328;
+    background-color: #008bdc;
     left:-1000px;
     z-index:0;
     transition: all .6s ease;
