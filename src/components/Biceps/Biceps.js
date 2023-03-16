@@ -15,6 +15,9 @@ const Biceps = () => {
 
     return (
         <>
+            <div className='back-container'>
+                <Link to="/"><button>Volver</button></Link>
+            </div>
         <div className='container'>
             <div className='row'>
 
