@@ -24,7 +24,7 @@ const Abs = () => {
     return (
         <>
         <div className='back-container'>
-            <Link to="/"><button>Volver</button></Link>
+        <Link to="/"><button  id="inicio">Volver</button></Link>
         </div>
         <div className='container'>
             <div className='row'>
@@ -44,18 +44,18 @@ const Abs = () => {
             </div>
         </div>
         <footer className='footer-page'>
-            <button 
+            <a href="#inicio"><button 
             className='btn'
             onClick={prevPage}
             >
                 Back
-            </button>
-            <button 
+            </button></a>
+            <a href="#inicio"><button 
             className='btn'
             onClick={nextPage}
             >
                 Next
-            </button>
+            </button></a>
         </footer>
         </>
     )

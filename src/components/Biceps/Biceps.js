@@ -25,7 +25,7 @@ const Biceps = () => {
     return (
         <>
             <div className='back-container'>
-                <Link to="/"><button>Volver</button></Link>
+            <Link to="/"><button  id="inicio">Volver</button></Link>
             </div>
         <div className='container'>
             <div className='row'>
@@ -45,18 +45,18 @@ const Biceps = () => {
             </div>
         </div>
         <footer className='footer-page'>
-            <button 
+            <a href="#inicio"><button 
             className='btn'
             onClick={prevPage}
             >
                 Back
-            </button>
-            <button 
+            </button></a>
+            <a className="go-up" href="#inicio"><button 
             className='btn'
             onClick={nextPage}
             >
                 Next
-            </button>
+            </button></a>
         </footer>
         </>
     )
